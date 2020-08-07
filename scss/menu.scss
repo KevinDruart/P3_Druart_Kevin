@@ -1,0 +1,48 @@
+@import "variables.scss";
+
+
+/* reglages des menus*/
+
+/*menu 1*/
+
+#la-note {
+    background: $menu1;
+}
+
+#la-note-enchantee {
+    background-color: $menu1;
+    @include menus-values;
+}
+
+/*menu 2*/
+
+#le-chic {
+    background: $menu1;
+}
+
+#le-chic-a-la-francaise {
+    background-color: $menu2;
+    @include menus-values;
+}
+
+/*menu 3*/
+
+#le-delice {
+    background: $menu1;
+}
+
+#le-delice-des-papilles {
+    background-color: $menu3;
+    @include menus-values;
+}
+
+/*menu 4*/
+
+#la-palette {
+    background: $menu1;
+}
+
+#la-palette-du-gout {
+    background-color: $menu4;
+    @include menus-values;
+}

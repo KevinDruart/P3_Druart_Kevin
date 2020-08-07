@@ -1,0 +1,118 @@
+/*import*/
+@import "variables.scss";
+@import "mixins.scss";
+@import "reset.scss";
+@import "menu.scss";
+
+/*header*/
+
+header {
+    text-align: center;
+    height: 30px;
+    padding-top: 10px;
+    font-size: 1.4em;
+    font-family: $police;
+}
+
+header h1 {
+    color:$color-secondary;
+}
+
+
+/*corps*/
+
+body {
+    @include fullscreen;
+    @include center;
+    max-width: $max-width;
+
+        main {    
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+}
+
+section div {
+    border: 1px solid grey;
+    width: 650px;
+    height: 268px;    
+    @include center;
+}
+
+section#menus {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+
+section a {
+    text-decoration: none;
+}
+/* menu la note enchantee*/
+
+
+
+/* menu le chic a la francaise*/
+
+
+div#le-chic {
+    margin-left: 30px;
+}
+/* menu le delice des papilles*/
+
+div#le-delice {
+    margin-top: 20px;
+}
+/* menu la palette du gout*/
+
+div#la-palette {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+/* section soon*/
+
+#soon {
+    background-color: $color-primary;
+    color: $color-secondary;
+    font-family: $police;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    width: 130px;
+    text-align: center;
+    @include center;
+    line-height: 2.4em;
+}
+
+
+
+/*footer*/
+
+footer,header {
+    background-color: $color-primary;
+}
+footer {
+    height: 30px;
+    padding: 0px 10px;
+    margin-top: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: $color-secondary;
+    font-family: $police;
+}
+/* liens footer*/
+
+a.mention {
+    float: right;
+}
+
+a.contact {
+     float: left;
+ }
+
+
+
+

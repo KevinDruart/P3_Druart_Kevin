@@ -1,118 +1,124 @@
-/*import*/
 @import "variables.scss";
 @import "mixins.scss";
-@import "reset.scss";
-@import "menu.scss";
 
-/*header*/
-
-header {
-    text-align: center;
-    height: 30px;
-    padding-top: 10px;
-    font-size: 1.4em;
-    font-family: $police;
+h1 {
+    font-size: 3.4em;
+    font-weight: 600;
+    margin: auto;
 }
-
-header h1 {
-    color:$color-secondary;
-}
-
-
-/*corps*/
 
 body {
-    @include fullscreen;
-    @include center;
-    max-width: $max-width;
+    text-align: center;
+    font-family: sans-serif;
+    margin: auto;
+}
 
-        main {    
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+header {
+    display: flex;
+    width: 100%;
+    height: 150px;    
+    font-size: 2em;
+    color: $color-secondary;
+    background-color: $color-primary;
+            a {
+                text-decoration: none;
+                color: $color-secondary;
+                @include center;
+            }   
+}
+
+.menus {
+    max-width: 1400px;
+    margin: auto;
+}
+.menus div {
+    width: 420px;
+    height: 590px;
+    display: inline-block;
+    margin: 50px 50px 20px 50px;
+}
+.menus img {
+    width: 420px;
+}
+.bloc_text {
+    width: 50%;
+    max-width: 600px;;
+    height: 120px;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+p {
+    width: 100%;
+}
+h3 {
+    font-size: 4.5em;
+}
+
+
+main {
+    margin: auto;
+    width: 95%;
+}
+main h2 {
+    display: block;
+    margin: 50px 0 20px 0;
+    font-size: 4em;
+    font-weight: 500;
+}
+section div {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0 0 0;
+    line-height: 3;
+}
+.bloc_text h2 {
+    font-size: 2.2em;
+    margin: 0;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        a {
+            text-decoration: none;
+            color: $color-secondary;
+            margin: auto;  
         }
 }
 
-section div {
-    border: 1px solid grey;
-    width: 650px;
-    height: 268px;    
-    @include center;
-}
-
-section#menus {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px 40px;
-}
-
-section a {
-    text-decoration: none;
-}
-/* menu la note enchantee*/
-
-
-
-/* menu le chic a la francaise*/
-
-
-div#le-chic {
-    margin-left: 30px;
-}
-/* menu le delice des papilles*/
-
-div#le-delice {
-    margin-top: 20px;
-}
-/* menu la palette du gout*/
-
-div#la-palette {
-    margin-left: 30px;
-    margin-top: 20px;
-}
-
-/* section soon*/
-
-#soon {
-    background-color: $color-primary;
+.bloc_text {
     color: $color-secondary;
-    font-family: $police;
-    border: 1px solid $color-primary;
-    border-radius: 5px;
-    width: 130px;
-    text-align: center;
-    @include center;
-    line-height: 2.4em;
+    background-color: $color-primary;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+        h2 {
+            display: block;
+        }
 }
 
-
-
-/*footer*/
-
-footer,header {
+.text {
+    color: $color-secondary;
     background-color: $color-primary;
 }
+
 footer {
-    height: 30px;
-    padding: 0px 10px;
-    margin-top: 10px;
+    margin-top: 50px;
+    flex-direction: row;
 }
-
-footer a {
-    text-decoration: none;
-    color: $color-secondary;
-    font-family: $police;
+.footer_left {
+    margin-left: 40px;
 }
-/* liens footer*/
-
-a.mention {
-    float: right;
+.footer_right {
+    margin-right: 40px;
 }
-
-a.contact {
-     float: left;
- }
-
-
-
-
+footer h2 {
+    font-size: 3em;
+}

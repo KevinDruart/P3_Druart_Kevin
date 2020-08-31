@@ -1,0 +1,128 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+/* REGLAGES GENERALES MENUS*/
+p {
+    text-align: left;
+    margin-right: 20px;
+    width: 350px;
+}
+
+article {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.menu_title img{
+    margin-top: 50px;
+    width: 500px;
+}
+
+.title {
+    line-height: 1.5;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: auto;
+}
+
+.title_menu {
+    width: 95%;
+    margin: auto;
+}
+
+article:last-child {
+    padding-bottom: 20px;
+}
+
+/*LIGNE IMAGES*/
+.line {
+margin: 0;
+width: auto;
+overflow: hidden;
+padding: 0;
+    img {
+        display: block;
+        width: 350px;
+        height: 30px;
+        margin: auto;
+    }
+}
+/*ENTREE*/
+.entree {
+    font-size: 22px;
+    color: rgb(198,116,18);
+        span {
+            font-weight: normal;
+        }
+        h3 {
+            @include h3-menus; 
+        }
+}
+
+/*PLATS*/
+
+.plat {
+    font-size: 22px;
+    color: rgb(165,103,153);
+        span {
+            font-weight: normal;
+        }
+        h3 {
+            @include h3-menus;
+        }
+}
+
+/*DESSERTS*/
+
+.dessert {
+    font-size: 22px;
+    color: #6e4ccc;
+        span {
+            font-weight: normal;
+        }
+        h3 {
+            @include h3-menus;
+        }
+}
+
+/*MENUS*/
+.menu_1,.menu_2,.menu_3,.menu_4 {
+    text-align: center;
+    font-family: 'Segoe print';
+    margin: auto;
+}
+.menu_1 h3 {
+    padding-top: 0;
+}
+
+.menu_1 {
+    background-color: $menu1;
+}
+.note_music span{
+    margin-top: 80px;
+}
+.menu_2 {
+    background-color: $menu2;
+}
+.menu_3 {
+    background-color: $menu3;
+}
+.menu_4 {
+    background-color: $menu4;
+}
+
+span {
+    margin: auto;
+    font-weight: 700;
+}
+
+.menu_end {
+    width: 250px;
+    margin: auto;
+}
+
+.price {
+    float: right;
+    margin-right: 0;
+}

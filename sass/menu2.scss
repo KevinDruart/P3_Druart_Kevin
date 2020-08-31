@@ -1,0 +1,39 @@
+/*parametre fonts*/
+
+@font-face {
+    font-family: 'croissant_oneregular';
+    src: url('Fonts/croissant/croissantone-regular-webfont.woff2') format('woff2'),
+         url('Fonts/croissant/croissantone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*parametre couleurs degradé*/
+
+$degrad-color3:#ca802a;
+$degrad-color4:#b382dc;
+
+/*parametre menu page d'accueil*/
+
+.menu2 {
+    font-family: 'croissant_oneregular';
+        h2 {
+            background: linear-gradient(to right, $degrad-color3 20%, $degrad-color4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3 {
+            color: $degrad-color3;
+        }
+}
+
+/*parametre page menu*/
+
+
+#le_chic main{
+    font-family: 'croissant_oneregular';
+        article {
+            background-color: $menu2;
+        }
+}

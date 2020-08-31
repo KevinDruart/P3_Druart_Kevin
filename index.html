@@ -1,49 +1,64 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="fr">
+
 <head>
     <meta charset="utf-8" />
-   <!--viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--meta-->
     <title>Ohmyfood accueil</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!--reset eric meyer-->
+    <script src="https://kit.fontawesome.com/3431a6fcb4.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
+    <!--HEADER-->
     <header>
-        <h1>Ohmyfood</h1>
+        <h1>
+            <a href="index.html">Ohmyfood</a>
+        </h1>
     </header>
+    <!--MAIN-->
     <main>
-        <section id="menus">
-            <div id="la-note-enchantee">
-                <img src="images/menu1.jpeg" />
-                <h2>La note enchantée</h2>
-                <h3>Menu</h3> 
-            </div>
-            <div id="le-chic-a-la-francaise">
-                <img src="images/menu2.jpeg" />
-                <h2>Le chic à la française</h2>
-                <h3>Menu</h3>
-            </div>
-            <div id="le-delice-des-papilles">
-                <img src="images/menu3.jpeg" />
-                <h2>Le delice des papilles</h2>
-                <h3>Menu</h3>
-            </div>
-            <div id="la-palette-du-gout">
-                <img src="images/menu4.jpeg" />
-                <h2>La palette du goût</h2>
-                <h3>Menu</h3>
-            </div>
-        </section>
-        <section id="soon">
-            <h3>Prochainement</h3>
-            <p>...</p>
+        <!--MENUS-->
+        <div id="home">
+            <article class="menus menu1">
+                <a href="lanoteenchantee.html">
+                    <span class="fas fa-music"></span>
+                    <h2>La note enchantée</h2>
+                    <h3>Menu</h3>
+                </a>
+            </article>
+            <article class="menus menu2">
+                <a href="lechicalafrancaise.html">
+                    <h2>Le chic à la française</h2>
+                    <h3>Menu</h3>
+                </a>
+            </article>
+            <article class="menus menu3">
+                <a href="ledelicedespapilles.html">
+                    <h2>Le délice des papilles</h2>
+                    <h3>Menu</h3>
+                </a>
+            </article>
+            <article class="menus menu4">
+                <a href="lapalettedugout.html">
+                    <h2>La palette du goût</h2>
+                    <h3>Menu</h3>
+                </a>
+            </article>
+        </div>
+        <!--SOON-->
+        <section class="soon">
+            <p>Prochainement <span>...</span></p>
         </section>
     </main>
+    <!--FOOTER-->
     <footer>
-        <a href="mentions_legale.html" target="_blank">Mentions Légales</a>
-        <a href="mailto:contact@ohmyfood.com">Contacter nous</a>
+        <a href="mentions_legales.html">Mentions légales</a>
+        <a href="mailto:ohmyfood@youyou.fr">Contactez-nous</a>
     </footer>
 </body>
+
 </html>

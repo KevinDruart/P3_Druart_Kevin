@@ -1,352 +1,321 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* les reglages couleurs*/
-/* les reglages polices*/
 /* background menus*/
 /* fullsreen*/
 /* centrer de gauche a droite*/
+/* les reglages couleurs*/
+/* background menus*/
 /* fullsreen*/
 /* centrer de gauche a droite*/
-/* les reglages couleurs*/
-/* les reglages polices*/
-/* background menus*/
-/* REGLAGES GENERALES MENUS*/
-p {
-    text-align: left;
-    margin-right: 20px;
-    width: 350px;
+/*Parametres fonts*/
+@font-face {
+  font-family: "devonshireregular";
+  src: url("Fonts//devonshire-regular-webfont.woff2") format("woff2"), url("Fonts/devonshire/devonshire-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kalamlight";
+  src: url("Fonts/kalam/kalam-light-webfont.woff2") format("woff2"), url("Fonts/kalam/kalam-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*parametres couleur du degradé*/
+/*parametres menu page d'accueil*/
+.menu1 {
+  font-family: "devonshireregular";
+}
+.menu1 span {
+  background: linear-gradient(to right, #ee5a61 0%, #f4896d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu1 h2 {
+  color: black;
+}
+.menu1 h3 {
+  color: black;
+  text-transform: uppercase;
+  font-family: "kalamlight";
 }
 
-article {
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
+/*parametres page menu*/
+#la_note main {
+  font-family: "kalamlight";
+}
+#la_note main article {
+  background-color: #fcdfdb;
 }
 
+/*parametre fonts*/
+@font-face {
+  font-family: "croissant_oneregular";
+  src: url("Fonts/croissant/croissantone-regular-webfont.woff2") format("woff2"), url("Fonts/croissant/croissantone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*parametre couleurs degradé*/
+/*parametre menu page d'accueil*/
+.menu2 {
+  font-family: "croissant_oneregular";
+}
+.menu2 h2 {
+  background: linear-gradient(to right, #ca802a 20%, #b382dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu2 h3 {
+  color: #ca802a;
+}
+
+/*parametre page menu*/
+#le_chic main {
+  font-family: "croissant_oneregular";
+}
+#le_chic main article {
+  background-color: #fff5fe;
+}
+
+/*parametre Fonts*/
+@font-face {
+  font-family: "dancing_scriptregular";
+  src: url("Fonts/dancing/dancingscript-variablefont_wght-webfont.woff2") format("woff2"), url("Fonts/dancing/dancingscript-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*parametre couleurs degradé*/
+/*parametre menu page d'accueil*/
+.menu3 {
+  font-family: "dancing_scriptregular";
+}
+.menu3 h2 {
+  background: linear-gradient(to right, #3150E2 80%, #c0d4f4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu3 h3 {
+  color: #3150E2;
+}
+
+/*parametre page menu*/
+#le_delice main {
+  font-family: "dancing_scriptregular";
+}
+#le_delice main article {
+  background-color: #edefef;
+}
+
+/*parametre Fonts*/
+@font-face {
+  font-family: "kaushan_scriptregular";
+  src: url("Fonts/kaushan/kaushanscript-regular-webfont.woff2") format("woff2"), url("Fonts/kaushan/kaushanscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/*parametre couleurs du degradé*/
+/*parametre menu page d'accueil*/
+.menu4 {
+  font-family: "kaushan_scriptregular";
+}
+.menu4 h2 {
+  background: linear-gradient(to right, #3EA132 70%, #bff78a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu4 h3 {
+  color: #3EA132;
+}
+
+/*parametre page menu*/
+#la_palette main {
+  font-family: "kaushan_scriptregular";
+}
+#la_palette main article {
+  background-color: #fdfffd;
+}
+
+/*HEADER*/
+header {
+  height: 150px;
+  background-color: #579c87;
+}
+header a {
+  color: #fdcb46;
+  text-decoration: none;
+}
+header h1 {
+  text-align: center;
+  font-size: 3.4em;
+  font-weight: 600;
+  line-height: 2em;
+  margin: auto;
+}
+
+/*BODY & main*/
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+body main {
+  margin: auto;
+}
+
+/*ARTICLES*/
+#home {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.menus {
+  width: 420px;
+  height: 590px;
+  display: inline-block;
+  box-shadow: 0px 0px 30px #bebebe;
+  border-radius: 3px;
+  line-height: 2em;
+  text-align: center;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+.menus a {
+  text-decoration: none;
+}
+
+/*SECTION SOON*/
+.soon {
+  display: block;
+  text-align: center;
+  color: #fdcb46;
+  background-color: #579c87;
+  border-radius: 20px;
+  margin: auto;
+  width: 40%;
+  max-width: 600px;
+  height: 120px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+.soon p {
+  font-size: 2.2em;
+  margin: 0;
+  line-height: 2em;
+}
+
+/*FOOTER*/
+footer {
+  color: #fdcb46;
+  background-color: #579c87;
+  position: sticky;
+  bottom: 0;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+footer a {
+  text-decoration: none;
+  color: #fdcb46;
+  margin: auto;
+  font-size: 3em;
+}
+
+/*parametre generales page menus */
 .menu_title img {
-    margin-top: 50px;
-    width: 500px;
+  margin-top: 50px;
+  width: 500px;
 }
 
 .title {
-    line-height: 1.5;
-    font-size: 1.4em;
-    font-weight: 700;
-    margin: auto;
-}
-
-.title_menu {
-    width: 95%;
-    margin: auto;
-}
-
-article:last-child {
-    padding-bottom: 20px;
-}
-
-/*LIGNE IMAGES*/
-.line {
-    margin: 0;
-    width: auto;
-    overflow: hidden;
-    padding: 0;
-}
-
-    .line img {
-        display: block;
-        width: 350px;
-        height: 30px;
-        margin: auto;
-    }
-
-/*ENTREE*/
-.entree {
-    font-size: 22px;
-    color: #c67412;
-}
-
-    .entree span {
-        font-weight: normal;
-    }
-
-    .entree h3 {
-        line-height: 1.5;
-        font-size: 25px;
-        font-weight: 700;
-        margin: auto;
-    }
-
-/*PLATS*/
-.plat {
-    font-size: 22px;
-    color: #a56799;
-}
-
-    .plat span {
-        font-weight: normal;
-    }
-
-    .plat h3 {
-        line-height: 1.5;
-        font-size: 25px;
-        font-weight: 700;
-        margin: auto;
-    }
-
-/*DESSERTS*/
-.dessert {
-    font-size: 22px;
-    color: #6e4ccc;
-}
-
-    .dessert span {
-        font-weight: normal;
-    }
-
-    .dessert h3 {
-        line-height: 1.5;
-        font-size: 25px;
-        font-weight: 700;
-        margin: auto;
-    }
-
-/*MENUS*/
-.menu_1, .menu_2, .menu_3, .menu_4 {
-    text-align: center;
-    font-family: "Segoe print";
-    margin: auto;
-}
-
-    .menu_1 h3 {
-        padding-top: 0;
-    }
-
-.menu_1 {
-    background-color: #fcdfdb;
-}
-
-.note_music span {
-    margin-top: 80px;
-}
-
-.menu_2 {
-    background-color: #fff5fe;
-}
-
-.menu_3 {
-    background-color: #edefef;
-}
-
-.menu_4 {
-    background-color: #fdfffd;
-}
-
-span {
-    margin: auto;
-    font-weight: 700;
-}
-
-.menu_end {
-    width: 250px;
-    margin: auto;
+  line-height: 2em;
+  font-size: 2em;
+  font-weight: 500;
+  margin: auto;
 }
 
 .price {
-    float: right;
-    margin-right: 0;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
-/*TITRES*/
-h1 {
-    font-size: 3.4em;
-    font-weight: 600;
+.page_menus main {
+  margin: auto;
+}
+.page_menus main h2 {
+  margin: 50px 0 20px 0;
+  font-size: 4em;
+  font-weight: 500;
 }
 
-h1, h2, body {
-    margin: auto;
+.page_menus article {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-h2 {
-    font-size: 2em;
-    font-weight: 500;
+.page_menus p {
+  text-align: left;
+  width: 60%;
+  font-size: 1.4em;
+  line-height: 4em;
 }
 
-h3 {
-    font-size: 4.5em;
-}
-
-/*parametre generale*/
-body {
-    text-align: center;
-    font-family: sans-serif;
-}
-
-p {
-    width: 100%;
-}
-
-header {
-    display: flex;
-    width: 100%;
-    height: 150px;
-    font-size: 2em;
-    color: #fdcb46;
-    background-color: #579c87;
-}
-
-    header a {
-        text-decoration: none;
-        color: #fdcb46;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-/*CORPS*/
-/*MENUS*/
-.menus {
-    max-width: 1400px;
-    margin: auto;
-}
-
-    .menus div {
-        width: 420px;
-        height: 590px;
-        display: inline-block;
-        margin: 50px 50px 20px 50px;
-        box-shadow: 0px 0px 30px #bebebe;
-    }
-
-    .menus img {
-        width: 420px;
-    }
-
-main {
-    margin: auto;
-    width: 95%;
-}
-
-    main h2 {
-        display: block;
-        margin: 50px 0 20px 0;
-        font-size: 4em;
-        font-weight: 500;
-    }
-
-section div {
-    width: 80%;
-    margin: auto;
-    padding: 50px 0 0 0;
-    line-height: 3;
-}
-
-/*SOON*/
-.bloc_text {
-    color: #fdcb46;
-    background-color: #579c87;
-    border-radius: 20px;
-    margin: auto;
-    width: 50%;
-    max-width: 600px;
-    height: 120px;
-    margin-top: 75px;
-    margin-bottom: 20px;
-    font-size: 1.5em;
-}
-
-    .bloc_text h2 {
-        display: block;
-        font-size: 2.2em;
-        margin: 0;
-    }
-
-/*FOOTER*/
-.text {
-    color: #fdcb46;
-    background-color: #579c87;
-}
-
-footer {
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 50px;
-    flex-direction: row;
-}
-
-    footer h2 {
-        font-size: 3em;
-    }
-
-    footer a {
-        text-decoration: none;
-        color: #fdcb46;
-        margin: auto;
-    }
-
-.footer_left, .footer_right {
-    margin-left: 40px;
-}
-
-/*media queries*/
-@media only screen and (max-width: 820px) {
-    .bloc_text {
-        width: 50%;
-        max-width: 600px;
-        height: 120px;
-        margin-top: 75px;
-        margin-bottom: 20px;
-        font-size: 1.5em;
-    }
-
-        .bloc_text h2 {
-            font-size: 2em;
-        }
-
-    footer h2 {
-        font-size: 2em;
-    }
-}
-
-@media only screen and (max-width: 570px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    header {
-        font-size: 1.4em;
-    }
-
-    main {
-        width: 100%;
-    }
-
-    .menus div {
-        height: auto;
-        width: auto;
-        margin: 40px 10px 20px 10px;
-    }
-
-        .menus div img {
-            width: 250px;
-        }
-
-    footer h2 {
-        font-size: 1.4em;
-    }
-
-    .bloc_text {
-        font-size: 1em;
-        height: 50px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-        .bloc_text h2 {
-            font-size: 1.4em;
-            padding-top: 5px;
-        }
+.page_menus section div {
+  display: flex;
+  margin: auto;
+  line-height: 3;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,39 @@
+/*parametre Fonts*/
+
+@font-face {
+    font-family: 'dancing_scriptregular';
+    src: url('Fonts/dancing/dancingscript-variablefont_wght-webfont.woff2') format('woff2'),
+         url('Fonts/dancing/dancingscript-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*parametre couleurs degradé*/
+
+$degrad-color5:#3150E2;
+$degrad-color6:#c0d4f4;
+
+/*parametre menu page d'accueil*/
+
+.menu3 {
+    font-family: 'dancing_scriptregular';
+        h2 {
+            background: linear-gradient(to right, $degrad-color5 80%, $degrad-color6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3 {
+            color: $degrad-color5;
+        }
+}
+
+/*parametre page menu*/
+
+#le_delice main{
+    font-family: 'dancing_scriptregular';
+        article {
+            background-color: $menu3;
+        }
+}
+

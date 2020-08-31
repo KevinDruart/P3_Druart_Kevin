@@ -1,0 +1,38 @@
+/*parametre Fonts*/
+
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('Fonts/kaushan/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('Fonts/kaushan/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*parametre couleurs du degradé*/
+
+$degrad-color7:#3EA132;
+$degrad-color8:#bff78a;
+
+/*parametre menu page d'accueil*/
+
+.menu4 {
+    font-family: 'kaushan_scriptregular';
+        h2 {
+            background: linear-gradient(to right, $degrad-color7 70%, $degrad-color8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h3 {
+            color: $degrad-color7;
+        }
+}
+
+/*parametre page menu*/
+
+#la_palette main{
+    font-family: 'kaushan_scriptregular';
+        article {
+            background-color: $menu4;
+        }
+}

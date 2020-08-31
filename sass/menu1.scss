@@ -1,0 +1,61 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+/*Parametres fonts*/
+
+@font-face {
+    font-family: 'devonshireregular';
+    src: url('Fonts//devonshire-regular-webfont.woff2') format('woff2'),
+         url('Fonts/devonshire/devonshire-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kalamlight';
+    src: url('Fonts/kalam/kalam-light-webfont.woff2') format('woff2'),
+         url('Fonts/kalam/kalam-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*parametres couleur du degradé*/
+
+$degrad-color1:#ee5a61;
+$degrad-color2: #f4896d;
+
+/*parametres menu page d'accueil*/
+
+.menu1 {
+    font-family: 'devonshireregular';
+        span {
+            background: linear-gradient(to right, $degrad-color1 0%, $degrad-color2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h2 {
+            color: black;
+        }
+        h3 {
+            color: black;
+            text-transform: uppercase;
+            font-family: 'kalamlight';
+        }
+}
+
+/*parametres page menu*/
+
+#la_note main{
+    font-family: 'kalamlight';
+        article {
+            background-color: $menu1;
+        }
+}
+
+
+
+.moments {
+
+}

@@ -1,128 +1,143 @@
-@import "mixins.scss";
+
 @import "variables.scss";
 
-/* REGLAGES GENERALES MENUS*/
-p {
-    text-align: left;
-    margin-right: 20px;
-    width: 350px;
-}
+/* parametres generale pages menus*/
 
-article {
+.pages_menu {
+    display: flex;
     width: 100%;
-    max-width: 1100px;
-    margin: auto;
-}
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    h2 {
+        margin-bottom: 35px;
+        margin-top: 25px;
+        font-size: 18px;
+        font-weight: 100;
+      }
+  }
 
-.menu_title img{
-    margin-top: 50px;
-    width: 500px;
-}
+  @media all and (min-width: 992px) {
+    .pages_menu {
+      margin-bottom: 40px;
+        h2 {
+            font-size: 30px;
+      }
+    }   
+  }
 
-.title {
-    line-height: 1.5;
-    font-size: 1.4em;
-    font-weight: 700;
-    margin: auto;
-}
-
-.title_menu {
-    width: 95%;
-    margin: auto;
-}
-
-article:last-child {
-    padding-bottom: 20px;
-}
-
-/*LIGNE IMAGES*/
-.line {
-margin: 0;
-width: auto;
-overflow: hidden;
-padding: 0;
-    img {
-        display: block;
-        width: 350px;
-        height: 30px;
-        margin: auto;
+  
+  .sub_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    box-shadow: 0px 0px 10px 0px #c9c5c9;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  @media all and (min-width: 768px) {
+    .sub_section {
+      width: 60%;
+      margin-top: 30px;
     }
-}
-/*ENTREE*/
-.entree {
-    font-size: 22px;
-    color: rgb(198,116,18);
-        span {
-            font-weight: normal;
-        }
-        h3 {
-            @include h3-menus; 
-        }
-}
-
-/*PLATS*/
-
-.plat {
-    font-size: 22px;
-    color: rgb(165,103,153);
-        span {
-            font-weight: normal;
-        }
-        h3 {
-            @include h3-menus;
-        }
-}
-
-/*DESSERTS*/
-
-.dessert {
-    font-size: 22px;
-    color: #6e4ccc;
-        span {
-            font-weight: normal;
-        }
-        h3 {
-            @include h3-menus;
-        }
-}
-
-/*MENUS*/
-.menu_1,.menu_2,.menu_3,.menu_4 {
-    text-align: center;
-    font-family: 'Segoe print';
-    margin: auto;
-}
-.menu_1 h3 {
-    padding-top: 0;
-}
-
-.menu_1 {
-    background-color: $menu1;
-}
-.note_music span{
-    margin-top: 80px;
-}
-.menu_2 {
-    background-color: $menu2;
-}
-.menu_3 {
-    background-color: $menu3;
-}
-.menu_4 {
-    background-color: $menu4;
-}
-
-span {
-    margin: auto;
-    font-weight: 700;
-}
-
-.menu_end {
-    width: 250px;
-    margin: auto;
-}
-
-.price {
-    float: right;
-    margin-right: 0;
-}
+  }
+  
+  .menu_item {
+    width: 81%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  @media all and (min-width: 992px) {
+    .menu_item {
+      margin-bottom: 15px;
+    }
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+  }
+  @media all and (min-width: 992px) {
+    .title {
+      margin-bottom: 30px;
+    }
+  }
+  .title img {
+    max-height: 5px;
+    width: 29%;
+  }
+  .title img.reverse {
+    transform: rotateY(180deg);
+  }
+  .title h4 {
+    font-size: 12px;
+    margin: 0 0;
+  }
+  .title h4:hover + .hover_underline {
+    transform: scale(1);
+  }
+  @media all and (min-width: 576px) {
+    .title h4 {
+      font-size: 15px;
+    }
+  }
+  @media all and (min-width: 992px) {
+    .title h4 {
+      font-size: 20px;
+    }
+  }
+  .title .hover_underline {
+    height: 1px;
+    background-color: black;
+    transform: scale(0);
+    transition: transform 500ms;
+    transform-origin: 0 0;
+  }
+  
+  .composition {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .composition p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 12px;
+  }
+  @media all and (min-width: 576px) {
+    .composition p {
+      font-size: 15px;
+    }
+  }
+  @media all and (min-width: 992px) {
+    .composition p {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  }
+  .composition p:nth-child(1) {
+    width: 85%;
+  }
+  .composition p:nth-child(2) {
+    width: 10%;
+  }
+  .composition.small_width {
+    width: 85%;
+  }
+  .composition.no_price {
+    flex-direction: column;
+  }
+  .composition.no_price p {
+    width: 100%;
+  }
+  .composition.price_bold p:nth-child(2) {
+    font-weight: bolder;
+  }

@@ -1,3 +1,5 @@
+@import "menu.scss";
+@import "variables.scss";
 /*parametre fonts*/
 
 @font-face {
@@ -6,34 +8,95 @@
          url('Fonts/croissant/croissantone-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
-/*parametre couleurs degradé*/
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('Fonts/roboto-slab/RobotoSlab-Regular-webfont.eot');
+    src: url('Fonts/roboto-slab/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Fonts/roboto-slab/RobotoSlab-Regular-webfont.woff2') format('woff2'),
+         url('Fonts/roboto-slab/RobotoSlab-Regular-webfont.woff') format('woff'),
+         url('Fonts/roboto-slab/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+         url('Fonts/roboto-slab/RobotoSlab-Regular-webfont.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-$degrad-color3:#ca802a;
-$degrad-color4:#b382dc;
+/* parametre couleurs du degradé */
 
-/*parametre menu page d'accueil*/
+$degrad-color3:#BB782E;
+$degrad-color4: #9C6A96;
+$degrad-color5:#694DC5;
 
 .menu2 {
     font-family: 'croissant_oneregular';
-        h2 {
-            background: linear-gradient(to right, $degrad-color3 20%, $degrad-color4 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        h3 {
-            color: $degrad-color3;
-        }
+    background: linear-gradient(to bottom right, $degrad-color3 25%, $degrad-color4, $degrad-color5 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+/*specifique menu 1 page menu */
+
+#menu_2 {
+    .sub_section {
+        background-color: $menu2;
+        font-family: 'roboto_slabregular';
+  }
+    h3 {
+        font-family: 'croissant_oneregular';
+        font-size: 15px;
+        font-weight: lighter;
+        background: -webkit-linear-gradient(left, $degrad-color3, $degrad-color4, $degrad-color5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+  }
+    .menu_item {
+        margin-bottom: 30px;
+  }
+    .title {
+        margin-bottom: 20px;
+        img {
+            width: 18%;
+          }
+    }
+    h4 {
+        font-weight: bold;
+    }
 }
 
-/*parametre page menu*/
-
-
-#le_chic main{
-    font-family: 'croissant_oneregular';
-        article {
-            background-color: $menu2;
-        }
+#item_1{
+    color: $degrad-color3;
+    .hover_underline{
+        background-color: $degrad-color3;
+    }
 }
+
+#item_2{
+    color: $degrad-color4;
+    .hover_underline{
+        background-color: $degrad-color4;
+    }
+}
+
+#item_3{
+    color: $degrad-color5;
+    .hover_underline{
+        background-color: $degrad-color5;
+    }  
+}
+
+/* parametre responsive */
+
+@media all and (min-width: 576px) {
+    #menu_2 h3 {
+        font-size: 30px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    #menu_2 .title img {
+        width: 29%;
+    }
+}
+  
+  

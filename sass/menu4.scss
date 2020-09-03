@@ -1,3 +1,5 @@
+@import "menu.scss";
+@import "variables.scss";
 /*parametre Fonts*/
 
 @font-face {
@@ -9,30 +11,58 @@
 
 }
 
-/*parametre couleurs du degradé*/
+@font-face {
+    font-family: 'kalamregular';
+    src: url('Fonts/kalam/kalam-regular-webfont.woff2') format('woff2'),
+         url('Fonts/kalam/kalam-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-$degrad-color7:#3EA132;
-$degrad-color8:#bff78a;
+}
 
-/*parametre menu page d'accueil*/
+/* parametre couleurs du degradé */
+
+$degrad-color8:#6AA256;
+$degrad-color9:#CCFE8F;
+
+/* parametre menu page d'accueil */
 
 .menu4 {
     font-family: 'kaushan_scriptregular';
-        h2 {
-            background: linear-gradient(to right, $degrad-color7 70%, $degrad-color8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        h3 {
-            color: $degrad-color7;
-        }
+    background: linear-gradient(to left, $degrad-color9 20%, $degrad-color8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-/*parametre page menu*/
 
-#la_palette main{
-    font-family: 'kaushan_scriptregular';
-        article {
-            background-color: $menu4;
-        }
+/* parametre page menu */
+
+#menu_4{
+    .sub_section{
+        font-family: 'kalamregular', cursive;
+        font-weight: 1;
+    }
+    h3{
+        font-family: 'kaushan_scriptregular';
+        font-size: 22px;
+        background: -webkit-linear-gradient(left, $degrad-color8, $degrad-color9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h4{
+        font-weight: 100;
+    }
+}
+
+/* parametre responsive */
+
+@media all and (min-width: 576px){
+    h3 {
+        font-size: 30px;
+    }
+}
+@media all and (min-width: 992px){
+    h3 {
+        font-size: 50px;
+    }
 }

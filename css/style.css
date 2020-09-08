@@ -168,18 +168,17 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: "kalamlight";
-  src: url("kalam-light-webfont.woff2") format("woff2"), url("kalam-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
 /* parametres couleur du degradé */
 .menu1 {
-  font-family: "devonshireregular";
+  font-family: "kalamregular";
+}
+.menu1 span {
   background: linear-gradient(to right, #ee5a61 0%, #f4896d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.menu1 a {
+  color: black;
 }
 
 /* specifique menu 1 page menu */

@@ -20,15 +20,6 @@
 
 }
 
-@font-face {
-    font-family: 'kalamlight';
-    src: url('kalam-light-webfont.woff2') format('woff2'),
-         url('kalam-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 /* parametres couleur du degradé */
 
 $degrad-color1:#ee5a61;
@@ -36,10 +27,15 @@ $degrad-color2: #f4896d;
 
 
 .menu1 {
-  font-family: 'devonshireregular';
-  background: linear-gradient(to right, $degrad-color1 0%, $degrad-color2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family: 'kalamregular';
+  span {
+    background: linear-gradient(to right, $degrad-color1 0%, $degrad-color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+    a {
+      color: black;
+    }
 }
 
 

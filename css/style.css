@@ -1151,14 +1151,32 @@ article span {
 }
 
 /*PARAMETRE DU RESPONSIV*/
-/*Min 340px*/
-@media only screen and (min-width: 340px) {
+/* Min 280px */
+@media only screen and (min-width: 280px) {
   header a {
-    font-size: 2.2em;
+    font-size: 1.6em;
+  }
+
+  .soon p {
+    font-size: 0.8em;
   }
 
   footer a {
-    font-size: 1.4em;
+    font-size: 1em;
+  }
+}
+/*Min 340px*/
+@media only screen and (min-width: 340px) {
+  header a {
+    font-size: 2em;
+  }
+
+  .soon p {
+    font-size: 1em;
+  }
+
+  footer a {
+    font-size: 1.2em;
   }
 }
 /*Min 768px*/

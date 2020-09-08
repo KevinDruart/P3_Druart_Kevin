@@ -1206,7 +1206,7 @@ article span {
   }
 
   .menus {
-    padding: 20px 0;
+    padding: 20px 0px;
   }
 }
 /*Min 340px*/
@@ -1316,4 +1316,5 @@ article span {
     font-size: 3em;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

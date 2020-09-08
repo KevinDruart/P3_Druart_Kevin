@@ -1,0 +1,111 @@
+@import "menu.scss";
+@import "variables.scss";
+/* Parametres fonts */
+
+@font-face {
+    font-family: 'devonshireregular';
+    src: url('Fonts/devonshire/devonshire-regular-webfont.woff2') format('woff2'),
+         url('Fonts/devonshire/devonshire-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kalamregular';
+    src: url('Fonts/kalam/kalam-regular-webfont.woff2') format('woff2'),
+         url('Fonts/kalam/kalam-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kalamlight';
+    src: url('kalam-light-webfont.woff2') format('woff2'),
+         url('kalam-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* parametres couleur du degradé */
+
+$degrad-color1:#ee5a61;
+$degrad-color2: #f4896d;
+
+
+.menu1 {
+  font-family: 'devonshireregular';
+  background: linear-gradient(to right, $degrad-color1 0%, $degrad-color2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* specifique menu 1 page menu */
+
+#menu_1 {
+    .sub_section {
+    background-color: $menu1;
+    font-family: 'kalamregular';
+    font-weight: 300;
+    h4 {
+        font-weight: bolder;
+      }
+  }
+}
+  
+#title_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 24px;
+    img {
+        width: 25%;
+      }
+    h3 {
+        font-family: 'devonshireregular';
+        font-size: 23px;
+        font-weight: 100;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+  }
+
+#last_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Devonshire";
+    width: 45%;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    img {
+        max-height: 20px;
+        margin-right: 5px;
+      }
+    p {
+        font-size: 17px;
+        margin: 0;
+      }
+  }
+
+/* parametre responsive */
+
+@media all and (min-width: 992px) {
+    #last_item {
+      align-items: center;
+      p {
+        font-size: 25px;
+      }
+    }
+    #title_menu {
+        margin-bottom: 20px;
+        h3 {
+            font-size:50px;
+        }
+      }
+  }
+
+

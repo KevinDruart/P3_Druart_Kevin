@@ -1,0 +1,13 @@
+{
+  "name": "dart-sass",
+  "version": "1.0.0",
+  "description": "script pour compiler des fichiers css grace a sass et aux fichier principal .scss",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "author": "kevin druart",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

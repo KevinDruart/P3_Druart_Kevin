@@ -41,7 +41,7 @@ $degrad-color2: #f4896d;
 
 /* specifique menu 1 page menu */
 
-#menu_1 {
+.pages__menu1{
     .sub_section {
     background-color: $menu1;
     font-family: 'kalamregular';
@@ -85,6 +85,11 @@ $degrad-color2: #f4896d;
         font-size: 17px;
         margin: 0;
       }
+  }
+
+
+  .no_price {
+    list-style: none;
   }
 
 /* parametre responsive */

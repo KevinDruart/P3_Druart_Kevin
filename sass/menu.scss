@@ -3,6 +3,14 @@
 
 /* parametres generale pages menus*/
 
+ul {
+  padding: 0;
+  margin: 0;
+  display: contents;
+  font-size: 1.6em;
+}
+
+
 .pages_menu {
     display: flex;
     width: 100%;
@@ -17,16 +25,6 @@
       }
   }
 
-  @media all and (min-width: 992px) {
-    .pages_menu {
-      margin-bottom: 40px;
-        h2 {
-            font-size: 30px;
-      }
-    }   
-  }
-
-  
   .sub_section {
     display: flex;
     flex-direction: column;
@@ -36,24 +34,13 @@
     margin-bottom: 30px;
     width: 90%;
   }
-  @media all and (min-width: 768px) {
-    .sub_section {
-      width: 60%;
-      margin-top: 30px;
-    }
-  }
-  
+
   .menu_item {
     width: 81%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
-  }
-  @media all and (min-width: 992px) {
-    .menu_item {
-      margin-bottom: 15px;
-    }
   }
   
   .title {
@@ -63,36 +50,20 @@
     align-items: center;
     height: 30px;
     width: 100%;
-  }
-  @media all and (min-width: 992px) {
-    .title {
-      margin-bottom: 30px;
+    img {
+      max-height: 5px;
+      width: 29%;
+    }
+    h4 {
+      font-size: 12px;
+      margin: 0 0;
     }
   }
-  .title img {
-    max-height: 5px;
-    width: 29%;
-  }
-  .title img.reverse {
-    transform: rotateY(180deg);
-  }
-  .title h4 {
-    font-size: 12px;
-    margin: 0 0;
-  }
+
   .title h4:hover + .hover_underline {
     transform: scale(1);
   }
-  @media all and (min-width: 576px) {
-    .title h4 {
-      font-size: 15px;
-    }
-  }
-  @media all and (min-width: 992px) {
-    .title h4 {
-      font-size: 20px;
-    }
-  }
+
   .title .hover_underline {
     height: 1px;
     background-color: black;
@@ -106,38 +77,90 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-  }
-  .composition p {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    font-size: 12px;
-  }
-  @media all and (min-width: 576px) {
-    .composition p {
-      font-size: 15px;
+    p {
+      margin-top:2px;
+      margin-bottom: 2px;
+      font-size: 12px;
     }
   }
+
+  .composition__price {
+    font-weight: 600;
+}
+
+  .composition.no_price {
+    flex-direction: column;
+  }
+
+  /* RESPONSIVE */
+
+
+
+/*min 280px*/
+
+@media all and (min-width: 280px) {
+  .composition {
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+}
+/*min 576px*/
+  @media all and (min-width: 576px) {
+    .composition {
+      display: flex;
+      flex-direction: row;
+  }
+  .composition__name {
+    text-align: left;
+  }
+  li {
+    font-size: 1.2em;
+    line-height: 2em;
+  }
+  .title h4 {
+      font-size: 15px;
+  }
+}
+
+/*min 768px*/
+@media all and (min-width: 768px) {
+  .sub_section {
+    width: auto;
+    margin-top: 30px;
+  }
+}
+
+/*min 992px*/
+  @media all and (min-width: 992px) {
+    .pages_menu {
+      margin-bottom: 40px;
+        h2 {
+            font-size: 30px;
+      }
+    }
+    li {
+      font-size: 1.6em;
+      line-height: 2.2em;
+    }   
+  }
+
   @media all and (min-width: 992px) {
     .composition p {
       font-size: 20px;
       margin-bottom: 10px;
     }
+    .title {
+      margin-bottom: 30px;
+      h4 {
+        font-size: 20px;
+      }
+    }
+    .menu_item {
+      margin-bottom: 15px;
+    }
   }
-  .composition p:nth-child(1) {
-    width: 85%;
-  }
-  .composition p:nth-child(2) {
-    width: 10%;
-  }
-  .composition.small_width {
-    width: 85%;
-  }
-  .composition.no_price {
-    flex-direction: column;
-  }
-  .composition.no_price p {
-    width: 100%;
-  }
-  .composition.price_bold p:nth-child(2) {
-    font-weight: bolder;
-  }
+

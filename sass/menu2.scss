@@ -37,7 +37,7 @@ $degrad-color5:#694DC5;
 
 /*specifique menu 1 page menu */
 
-#menu_2 {
+.pages__menu2 {
     .sub_section {
         background-color: $menu2;
         font-family: 'roboto_slabregular';
@@ -64,21 +64,21 @@ $degrad-color5:#694DC5;
     }
 }
 
-#item_1{
+#item_1 {
     color: $degrad-color3;
     .hover_underline{
         background-color: $degrad-color3;
     }
 }
 
-#item_2{
+#item_2 {
     color: $degrad-color4;
     .hover_underline{
         background-color: $degrad-color4;
     }
 }
 
-#item_3{
+#item_3 {
     color: $degrad-color5;
     .hover_underline{
         background-color: $degrad-color5;
@@ -88,13 +88,13 @@ $degrad-color5:#694DC5;
 /* parametre responsive */
 
 @media all and (min-width: 576px) {
-    #menu_2 h3 {
+    .pages__menu2 h3 {
         font-size: 30px;
     }
 }
 
 @media all and (min-width: 992px) {
-    #menu_2 .title img {
+    .pages__menu2 .title img {
         width: 29%;
     }
 }

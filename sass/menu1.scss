@@ -1,5 +1,6 @@
 @import "menu.scss";
 @import "variables.scss";
+@import "effects.scss";
 /* Parametres fonts */
 
 @font-face {
@@ -28,6 +29,7 @@ $degrad-color2: #f4896d;
 
 .menu1 {
   font-family: 'kalamregular';
+  background-color: $menu1;
   span {
     background: linear-gradient(to right, $degrad-color1 0%, $degrad-color2 100%);
     -webkit-background-clip: text;
@@ -50,6 +52,13 @@ $degrad-color2: #f4896d;
         font-weight: bolder;
       }
   }
+  .title{
+    margin-bottom: 20px;
+    color: black;
+        .hover_underline{
+            background-color: black;
+        }
+    }
 }
   
 #title_menu {
@@ -107,6 +116,4 @@ $degrad-color2: #f4896d;
             font-size:50px;
         }
       }
-  }
-
-
+}

@@ -1,5 +1,6 @@
 @import "menu.scss";
 @import "variables.scss";
+@import "effects.scss";
 /*parametre fonts*/
 
 @font-face {
@@ -29,12 +30,14 @@ $degrad-color4: #9C6A96;
 $degrad-color5:#694DC5;
 
 .menu2 {
+    background-color: $menu2;
+    a {
     font-family: 'croissant_oneregular';
     background: linear-gradient(to bottom right, $degrad-color3 25%, $degrad-color4, $degrad-color5 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
+}
 /*specifique menu 1 page menu */
 
 .pages__menu2 {

@@ -1,5 +1,6 @@
 @import "menu.scss";
 @import "variables.scss";
+@import "effects.scss";
 /*parametre Fonts*/
 
 @font-face {
@@ -26,37 +27,42 @@ $degrad-color7:#5FA4F1;
 /*parametre menu page d'accueil*/
 
 .menu3 {
+    background-color: $menu3;
+    a {
     font-family: 'dancing_scriptregular';
     background: linear-gradient(to right, $degrad-color6 80%, $degrad-color7 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
         }
-
+}
 
 /*parametre page menu*/
 
-.pages__menu3{
-    .sub_section{
+.pages__menu3 {
+    .sub_section {
         background-color: $menu3;
         font-family: 'shadows_into_lightregular', cursive;
     }
-    h3{
+    h3 {
         font-family: 'dancing_scriptregular';
         font-size: 25px;
         background: -webkit-linear-gradient(left, $degrad-color6, $degrad-color7);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    .menu_item{
+    .menu_item {
         margin-bottom: 30px;
     }
-    .title{
+    .title {
         margin-bottom: 20px;
+        color: black;
+            .hover_underline{
+                background-color: $degrad-color6;
     }
-    h4{
+    h4 {
         font-weight: lighter;
     }
-    .title img{
+    .title img {
         width: 26%;
     }
 }
@@ -75,4 +81,5 @@ $degrad-color7:#5FA4F1;
     .title img {
         width: 29%;
     }
-}        
+}
+}           

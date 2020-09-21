@@ -1,6 +1,4 @@
 
-@import "variables.scss";
-
 /* parametres generale pages menus*/
 
 ul {
@@ -60,18 +58,6 @@ ul {
     }
   }
 
-  .title h4:hover + .hover_underline {
-    transform: scale(1);
-  }
-
-  .title .hover_underline {
-    height: 1px;
-    background-color: black;
-    transform: scale(0);
-    transition: transform 500ms;
-    transform-origin: 0 0;
-  }
-  
   .composition {
     display: flex;
     flex-direction: row;

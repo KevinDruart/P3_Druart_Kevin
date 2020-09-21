@@ -1530,7 +1530,7 @@ main {
   border-radius: 20px;
   background-color: #579c87;
 }
-.soon p {
+.soon h6 {
   color: #fdcb46;
   font-size: 1.2em;
 }
@@ -1626,8 +1626,12 @@ article span {
 
 /*MENTIONS LEGALES*/
 #mentions {
+  height: 530px;
+}
+#mentions section {
   padding-top: 20px;
   text-align: center;
+  height: 530px;
 }
 
 /*PARAMETRE DU RESPONSIV*/
@@ -1664,12 +1668,12 @@ article span {
   }
 
   .menus {
-    padding: 40px 0;
+    padding: 40px 0px;
   }
 }
 @media only screen and (min-width: 576px) {
   .menus {
-    padding: 100px 0;
+    padding: 100px 0px;
   }
 }
 /*Min 768px*/

@@ -70,7 +70,7 @@ main {
     padding: 0px 5px 0px 15px;
     border-radius: 20px;
     background-color: $color-primary;
-        p {    
+        h6 {    
             color: $color-secondary;
             font-size: 1.2em;
         }
@@ -169,11 +169,14 @@ article span {
 }
 
 /*MENTIONS LEGALES*/
-#mentions {
+#mentions{
+    height: 530px;
+    section {
     padding-top: 20px;
     text-align: center;
+    height: 530px;
+    }
 }
-
 /*PARAMETRE DU RESPONSIV*/
 /* Min 280px */
 @media only screen and (min-width: 280px){
@@ -191,7 +194,6 @@ article span {
     }
 }
 
-
 /*Min 340px*/
 @media only screen and (min-width: 340px) {
     .main_header a {
@@ -204,13 +206,13 @@ article span {
         font-size: 1.2em;
     }
     .menus {
-        padding: 40px 0;
+        padding: 40px 0px;
     }
 }
 
 @media only screen and (min-width: 576px) {
     .menus {
-        padding: 100px 0;
+        padding: 100px 0px;
     }
 }
 

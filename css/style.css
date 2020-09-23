@@ -1506,7 +1506,7 @@ main {
   border: solid #bebebe 1px;
   box-shadow: 0px 0px 30px #bebebe;
   border-radius: 2px;
-  padding-top: 20px 0px;
+  padding-top: 20px;
 }
 .menus a {
   display: flex;
@@ -1752,4 +1752,4 @@ article span {
   }
 }
 
-
+/*# sourceMappingURL=style.css.map */

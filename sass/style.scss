@@ -25,7 +25,11 @@ body {
 }
 /* HEADER*/
 .main_header {
+<<<<<<< HEAD
     grid-area: header;
+=======
+    grid-area: 'header';
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
     background-color: $color-primary;
     display: flex;
     height: 80px;
@@ -41,7 +45,11 @@ body {
 }
 /* MENUS*/
 #home {
+<<<<<<< HEAD
     grid-area: menus;
+=======
+    grid-area: 'menus';
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
     display: grid;
     margin: 5% 10%;
     grid-template-columns: 1fr;
@@ -50,6 +58,7 @@ body {
 
 /* BOUTON */
 .soon {
+<<<<<<< HEAD
     grid-area: bouton;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -58,13 +67,28 @@ body {
     h6 {
         height: 40px;
         line-height: 40px;
+=======
+    grid-area: 'bouton';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px auto 10px auto;
+    h6 {
+        height: 30px;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
         text-align: center;
         background-color: $color-primary;
         color: $color-secondary;
         border-radius: 10px;
+<<<<<<< HEAD
         font-size:16px;
         font-weight: normal;
         width: 200PX;
+=======
+        font-size: 16px;
+        width: 200PX;
+        padding-top: 10px;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
         span{
             animation-name: blink;
             animation-duration: 1.4s;
@@ -84,6 +108,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 /* FOOTER */
 footer {
     grid-area: footer;
@@ -112,6 +137,50 @@ footer {
     }
 }
 
+=======
+/* effets 3 petits point animé */
+/* animation soon */
+@keyframes blink{
+    0%{
+        opacity: .2;
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+
+/* FOOTER */
+footer {
+    grid-area: 'footer';
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    height: 50px;
+    position: fixed;
+    background-color: $color-primary;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    a {
+        font-size: 15px;
+        padding: 15px 15px 15px 15px;       
+        text-decoration: none;
+        color: $color-secondary;
+        display: block;
+        &:hover{
+            animation: wiggle 0.3s;
+            -webkit-animation: wiggle 0.3s;
+        }
+    }
+}
+
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
 /* effet wiggle */
 /* animation footer*/
 @keyframes wiggle{
@@ -148,6 +217,7 @@ footer {
 	100%{
 		transform: rotate(0deg);
 	}
+<<<<<<< HEAD
 }
 /* animation footer keyframe mozilla*/
 @-webkit-keyframes wiggle{
@@ -196,6 +266,47 @@ footer {
         margin: 10px auto 10px auto;
     }
 }
+=======
+}
+/* animation footer keyframe mozilla*/
+@-webkit-keyframes wiggle{
+    0%{
+        -webkit-transform: rotate(0deg);
+	}
+	10%{
+		-webkit-transform:rotate(5deg);
+	}
+	20%{
+		-webkit-transform: rotate(0deg);
+	}
+	30%{
+		-webkit-transform: rotate(-5deg);
+	}
+	40%{
+		-webkit-transform: rotate(0deg);
+	}
+	50%{
+		-webkit-transform:rotate(5deg);
+	}
+	60%{
+		-webkit-transform: rotate(0deg);
+	}
+	70%{
+		-webkit-transform: rotate(-5deg);
+	}
+	80%{
+		-webkit-transform: rotate(0deg);
+	}
+	90%{
+		-webkit-transform:rotate(5deg);
+	}
+	100%{
+		-webkit-transform: rotate(0deg);
+	}
+}
+
+/* RESPONSIVE */
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
 /* 768PX */
 @media only screen and (min-width: 768px) {
     body{
@@ -204,6 +315,16 @@ footer {
         #page_main {
         .main_header {
             width: 100%;
+<<<<<<< HEAD
+=======
+            .logo{
+                background: url("../img/Logo-ohmyfood.png") no-repeat;
+                width: 465px;
+                height: 108px;
+                margin-top: 5px;
+                @include center;
+            }
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
         }
         #home {
             display: grid;
@@ -226,11 +347,15 @@ footer {
         }
     }
     .soon {
+<<<<<<< HEAD
         margin: 0px auto 40px auto;
         h6 {
             width: 260px;
             font-size: 22px;
         }
+=======
+        margin: 0px auto 80px auto;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
     }
     footer a {
             font-size: 30px;
@@ -265,6 +390,7 @@ footer {
 /* 1200px */
 @media only screen and (min-width: 1200px) {
     body {
+<<<<<<< HEAD
         .main_header a {
             font-size: 2em;
         }
@@ -280,11 +406,20 @@ footer {
                 line-height: 50px;
             }
         }
+=======
+        max-width: 1600px;
+        width: 80%;
+        @include center;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
         footer {
             width: 80%;
             height: 100px;
             a {
+<<<<<<< HEAD
                 font-size: 40px;
+=======
+                font-size: 35px;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
             }
         }
     }

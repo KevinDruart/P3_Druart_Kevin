@@ -296,13 +296,20 @@
 }
 #pages_menu h2 {
   text-align: center;
+<<<<<<< HEAD
   margin-bottom: 0;
   padding-top: 20px;
+=======
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
 }
 
 /* Titre restaurant */
 #title_menu {
+<<<<<<< HEAD
   grid-area: title-menu;
+=======
+  grid-area: "title-menu";
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   text-align: center;
   padding-top: 5%;
 }
@@ -316,7 +323,12 @@
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 0px 10px 0px #bebebe;
+<<<<<<< HEAD
   grid-area: page-menu;
+=======
+  grid-area: "page-menu";
+  display: grid;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   grid-gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
@@ -325,7 +337,11 @@
 }
 
 .title {
+<<<<<<< HEAD
   grid-area: header-menu;
+=======
+  grid-area: "header-menu";
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -344,6 +360,7 @@
 }
 
 .entree {
+<<<<<<< HEAD
   grid-area: entree;
 }
 
@@ -357,11 +374,27 @@
 
 #last_item {
   grid-area: signature;
+=======
+  grid-area: "entree";
+}
+
+.plat {
+  grid-area: "plat";
+}
+
+.dessert {
+  grid-area: "dessert";
+}
+
+#last_item {
+  grid-area: "signature";
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   display: flex;
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10%;
+<<<<<<< HEAD
 }
 
 ul {
@@ -375,6 +408,21 @@ ul li {
   text-align: center;
 }
 
+=======
+}
+
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+  display: FLEX;
+  flex-direction: column;
+  padding: 5% 6% 0% 6%;
+  text-align: center;
+}
+
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
 .composition__name {
   padding-bottom: 4%;
 }
@@ -514,9 +562,12 @@ ul li {
     width: 26%;
   }
 
+<<<<<<< HEAD
   #pages_menu .sub_section {
     margin-bottom: 40px;
   }
+=======
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   #pages_menu .sub_section header {
     font-size: 40px;
   }
@@ -719,7 +770,11 @@ body {
 
 /* HEADER*/
 .main_header {
+<<<<<<< HEAD
   grid-area: header;
+=======
+  grid-area: "header";
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   background-color: #579c87;
   display: flex;
   height: 80px;
@@ -736,7 +791,11 @@ body {
 
 /* MENUS*/
 #home {
+<<<<<<< HEAD
   grid-area: menus;
+=======
+  grid-area: "menus";
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   display: grid;
   margin: 5% 10%;
   grid-template-columns: 1fr;
@@ -745,6 +804,7 @@ body {
 
 /* BOUTON */
 .soon {
+<<<<<<< HEAD
   grid-area: bouton;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -754,13 +814,28 @@ body {
 .soon h6 {
   height: 40px;
   line-height: 40px;
+=======
+  grid-area: "bouton";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto 10px auto;
+}
+.soon h6 {
+  height: 30px;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   text-align: center;
   background-color: #579c87;
   color: #fdcb46;
   border-radius: 10px;
   font-size: 16px;
+<<<<<<< HEAD
   font-weight: normal;
   width: 200PX;
+=======
+  width: 200PX;
+  padding-top: 10px;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
 }
 .soon h6 span {
   animation-name: blink;
@@ -779,9 +854,28 @@ body {
   animation-delay: 0.4s;
 }
 
+<<<<<<< HEAD
 /* FOOTER */
 footer {
   grid-area: footer;
+=======
+/* effets 3 petits point animé */
+/* animation soon */
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+/* FOOTER */
+footer {
+  grid-area: "footer";
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   bottom: 0;
   width: 100%;
   margin: auto;
@@ -821,6 +915,7 @@ footer a:hover {
   }
   30% {
     transform: rotate(-5deg);
+<<<<<<< HEAD
   }
   40% {
     transform: rotate(0deg);
@@ -891,6 +986,68 @@ footer a:hover {
     margin: 10px auto 10px auto;
   }
 }
+=======
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  70% {
+    transform: rotate(-5deg);
+  }
+  80% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* animation footer keyframe mozilla*/
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(5deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-5deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(-5deg);
+  }
+  80% {
+    -webkit-transform: rotate(0deg);
+  }
+  90% {
+    -webkit-transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+/* RESPONSIVE */
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
 /* 768PX */
 @media only screen and (min-width: 768px) {
   body {
@@ -900,10 +1057,22 @@ footer a:hover {
   body #page_main .main_header {
     width: 100%;
   }
+<<<<<<< HEAD
+=======
+  body #page_main .main_header .logo {
+    background: url("../img/Logo-ohmyfood.png") no-repeat;
+    width: 465px;
+    height: 108px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   body #page_main #home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4%;
+<<<<<<< HEAD
   }
   body #page_main #home .menu4 {
     padding-bottom: 0px;
@@ -924,6 +1093,24 @@ footer a:hover {
   body #page_main .soon h6 {
     width: 260px;
     font-size: 22px;
+=======
+  }
+  body #page_main #home .menu4 {
+    padding-bottom: 0px;
+    margin-bottom: 0%;
+  }
+  body #page_main #home .menu2 h2 {
+    font-size: 24px;
+  }
+  body #page_main #home .menu1 h2, body #page_main #home .menu3 h2, body #page_main #home .menu4 h2 {
+    font-size: 35px;
+  }
+  body #page_main #home .menu1 h3, body #page_main #home .menu3 h3, body #page_main #home .menu4 h3 {
+    font-size: 40px;
+  }
+  body #page_main .soon {
+    margin: 0px auto 80px auto;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   }
   body #page_main footer a {
     font-size: 30px;
@@ -951,6 +1138,7 @@ footer a:hover {
   }
   body footer a {
     font-size: 40px;
+<<<<<<< HEAD
   }
 }
 /* 1200px */
@@ -972,13 +1160,28 @@ footer a:hover {
     font-size: 30px;
     height: 50px;
     line-height: 50px;
+=======
+  }
+}
+/* 1200px */
+@media only screen and (min-width: 1200px) {
+  body {
+    max-width: 1600px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   }
   body footer {
     width: 80%;
     height: 100px;
   }
   body footer a {
+<<<<<<< HEAD
     font-size: 40px;
+=======
+    font-size: 35px;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   }
 }
 

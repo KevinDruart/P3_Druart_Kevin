@@ -98,13 +98,20 @@
   margin-bottom: 15%;
   h2 {
     text-align: center;
+<<<<<<< HEAD
     margin-bottom: 0;
     padding-top: 20px;
+=======
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   }
 }
 /* Titre restaurant */
 #title_menu {
+<<<<<<< HEAD
   grid-area: title-menu;
+=======
+  grid-area: 'title-menu';
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   text-align: center;
   padding-top: 5%;
   h3 {
@@ -116,7 +123,12 @@
   width: 90%;
   @include center;
   box-shadow: 0px 0px 10px 0px $color-third;
+<<<<<<< HEAD
   grid-area: page-menu;
+=======
+  grid-area: 'page-menu';
+  display: grid;
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   grid-gap: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
@@ -129,7 +141,11 @@
 }
 
 .title {
+<<<<<<< HEAD
   grid-area: header-menu;
+=======
+  grid-area: 'header-menu';
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -149,6 +165,7 @@
 
 
 .entree {
+<<<<<<< HEAD
   grid-area: entree;
 }
 
@@ -162,6 +179,21 @@
 
 #last_item {
   grid-area: signature;
+=======
+  grid-area: 'entree';
+}
+
+.plat {
+  grid-area: 'plat';
+}
+
+.dessert {
+  grid-area: 'dessert';
+}
+
+#last_item {
+  grid-area: 'signature';
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
   display: flex;
   flex-direction: row;
   @include center;
@@ -233,21 +265,33 @@ ul {
   color: $degrad-color3;
   .title .hover_underline {
     background-color: $degrad-color3;
+<<<<<<< HEAD
   }
+=======
+}
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
 }
 
 #item_2 {
   color: $degrad-color4;
   .title .hover_underline {
     background-color: $degrad-color4;
+<<<<<<< HEAD
   }
+=======
+}
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
 }
 
 #item_3 {
   color: $degrad-color5;
   .title .hover_underline {
     background-color: $degrad-color5;
+<<<<<<< HEAD
   }
+=======
+}
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
 }
 
 /* specifique menu 3 */
@@ -311,13 +355,20 @@ ul.composition.no_price {
 }
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
 /* 1200px */
 @media only screen and (min-width: 1200px) {
   .title img {
     width: 26%;
   }
   #pages_menu .sub_section {
+<<<<<<< HEAD
     margin-bottom: 40px;
+=======
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7
     header {
       font-size: 40px;
     }

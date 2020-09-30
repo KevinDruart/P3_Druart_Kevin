@@ -1,8 +1,16 @@
 /*parametre des animations et/ou  effets*/
 /* Animation zoom menu */
+<<<<<<< HEAD:sass/effects.scss
 .menus {
     display: grid;
 }
+=======
+
+.menus {
+    display: grid;
+}
+
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7:sass/_effects.scss
 .menus a {
         transition:0.5s;
         -moz-transition: all 0.5s;
@@ -13,6 +21,14 @@
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
         }
+<<<<<<< HEAD:sass/effects.scss
+=======
+    
+
+
+
+
+>>>>>>> c4489cd1251142930b9fb5124e86c508734621d7:sass/_effects.scss
 /* animation soon */
 @keyframes blink{
     0%{

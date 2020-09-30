@@ -35,6 +35,9 @@ $degrad-color9:#CCFE8F;
     background: linear-gradient(to left, $degrad-color9 20%, $degrad-color8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    h3 {
+        font-family: 'segoeprint';
+    }
     }
 }
 

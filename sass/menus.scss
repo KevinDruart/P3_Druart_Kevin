@@ -1,0 +1,329 @@
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "effects";
+
+/* Parametres menus generaux */
+.menu1, .menu2, .menu3, .menu4 {
+    @include box-menu;
+    a {
+        @include no-style;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 35px;
+        font-family: 'segoeprint';
+    }
+}
+
+/* Parametres specific menu */
+/* menu 1 */
+.pages_menu1 container {
+  font-family: 'segoeprint';
+}
+.menu1 {
+    background-color: $menu1;
+    a {
+        color: $text-menu1;
+    }
+    img {
+        margin-top: -50px;
+        max-width: 100%;
+    }
+    h2 {
+        font-family: 'devonshireregular';
+    }
+    h3 {
+        text-transform: uppercase;
+  }
+}
+/* menu 2 */
+.pages_menu3 container {
+  font-family: 'segoeprint';
+}
+.menu2 {
+    background-color: $menu2;
+    h2 {
+        background: linear-gradient(to bottom right, $degrad-color3 25%, $degrad-color4, $degrad-color5 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'croissant_oneregular';
+    }
+    h3 {
+        font-family: 'segoeprint';
+        color: $degrad-color3;
+  }
+}
+
+/* menu 3 */
+.menu3 {
+    background-color: $menu3;
+    h2, h3 {
+        background: linear-gradient(to right, $degrad-color6 80%, $degrad-color7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    }
+    h2 {
+        font-family: 'dancing_scriptregular';
+    }
+}
+
+/* menu 4 */
+.menu4 {
+    background-color: $menu4;
+    margin-bottom: 22%;
+    h2, h3 {
+        background: linear-gradient(to left, $degrad-color9 20%, $degrad-color8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h2 {
+        font-family: 'kaushan_scriptregular';    
+    }
+}
+
+/* page menu bases */
+/*pages disposition */
+#pages_menu {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "header"
+                       "title-menu" 
+                       "page-menu" 
+                       "footer";
+  margin-bottom: 15%;
+  h2 {
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 20px;
+  }
+}
+/* Titre restaurant */
+#title_menu {
+  grid-area: title-menu;
+  text-align: center;
+  padding-top: 5%;
+  h3 {
+    text-align: center;
+  }
+}
+/* MAIN*/
+.sub_section {
+  width: 90%;
+  @include center;
+  box-shadow: 0px 0px 10px 0px $color-third;
+  grid-area: page-menu;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "header-menu"
+                       "entree" 
+                       "plat" 
+                       "dessert"
+                       "signature";
+  margin: auto;
+}
+
+.title {
+  grid-area: header-menu;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  padding: 0% 6% 0% 6%;
+  img {
+    max-height: 5px;
+    width: 20%;
+  }
+  h4 {
+      font-size:1em;
+      margin: 0 0;
+      text-align: center;
+    }
+  }
+
+
+.entree {
+  grid-area: entree;
+}
+
+.plat {
+  grid-area: plat;
+}
+
+.dessert {
+  grid-area: dessert;
+}
+
+#last_item {
+  grid-area: signature;
+  display: flex;
+  flex-direction: row;
+  @include center;
+  padding-bottom: 10%;
+}
+
+ul {
+  padding-left: 0;
+  li {
+    list-style: none;
+    display: FLEX;
+    flex-direction: column;
+    padding: 5% 6% 0% 6%;
+    text-align: center;
+  }
+}
+
+.composition__name {
+  padding-bottom: 4%;
+}
+
+.composition__price {
+  font-weight: 600;
+}
+
+#last_item img {
+  padding-right: 5%;
+}
+
+/* specifique menu 1 */
+
+.pages_menu1 .sub_section {
+  background-color: $menu1;
+  color: $text-menu1;
+  #title_menu {
+  font-family: 'devonshireregular';
+  h3 {
+    font-size: 40px;
+    font-weight: 100;
+}
+  ul {
+  font-family: 'segoeprint';
+}
+}
+}
+
+/* specifique menu 2 */
+.pages_menu2 .sub_section {
+  background-color: $menu2;
+  font-family: "roboto_slabregular";
+  font-size: 15px;
+  .title h4 {
+    font-size: 14px;
+    margin: 0 0;
+    text-align: center;
+}
+}
+
+.pages_menu2 h3 {
+  font-family: "croissant_oneregular";
+  font-size: 20px;
+  font-weight: lighter;
+  background: -webkit-linear-gradient(left, #BB782E, #9C6A96, #694DC5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#item_1 {
+  color: $degrad-color3;
+  .title .hover_underline {
+    background-color: $degrad-color3;
+  }
+}
+
+#item_2 {
+  color: $degrad-color4;
+  .title .hover_underline {
+    background-color: $degrad-color4;
+  }
+}
+
+#item_3 {
+  color: $degrad-color5;
+  .title .hover_underline {
+    background-color: $degrad-color5;
+  }
+}
+
+/* specifique menu 3 */
+
+.pages_menu3 .sub_section {
+  background-color: $menu3;
+  h3{
+  font-family: "dancing_scriptregular";
+  font-size: 40px;
+  background: -webkit-linear-gradient(left, $degrad-color6, $degrad-color7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  h4 {
+    text-align: center;
+    font-family: 'segoeprint';
+  }
+}
+
+/* specifique menu 4 */
+
+.pages_menu4 .sub_section {
+  background-color: $menu4;
+  font-family: 'segoeprint';
+  h3{
+  font-family: 'kaushan_scriptregular';;
+  font-size: 25px;
+  background: -webkit-linear-gradient(left, $degrad-color8, $degrad-color9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  h4 {
+    text-align: center;
+    font-family: 'segoeprint';
+  }
+}
+
+/* responsive */
+/* 576px */
+@media only screen and (min-width: 576px) {
+  .composition {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul li {
+  padding: 0% 6% 0% 6%;
+}
+ul.composition.no_price {
+  display: flex;
+  flex-direction: column;
+}
+#pages_menu {
+  margin-bottom: 8%;
+}
+.title img {
+  width: 30%;
+}
+.composition__name {
+  text-align: left;
+}
+}
+
+/* 1200px */
+@media only screen and (min-width: 1200px) {
+  .title img {
+    width: 26%;
+  }
+  #pages_menu .sub_section {
+    margin-bottom: 40px;
+    header {
+      font-size: 40px;
+    }
+    .title h4 {
+      font-size: 22px;
+    }
+  } 
+}
+

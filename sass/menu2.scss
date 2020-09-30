@@ -36,6 +36,9 @@ $degrad-color5:#694DC5;
     background: linear-gradient(to bottom right, $degrad-color3 25%, $degrad-color4, $degrad-color5 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    h3 {
+        font-family: 'cantata';
+    }
   }
 }
 /*specifique menu 1 page menu */

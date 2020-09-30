@@ -2,16 +2,23 @@
 
 /* Animation zoom menu */
 
-.menus a {
-    transition:0.5s;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
+.menus {
+    display: grid;
 }
+
+.menus a {
+        transition:0.5s;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        }
 .menus a:hover {
     transform : scale(1.2);
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
-}
+        }
+    
+
+
 
 
 /* animation soon */

@@ -43,6 +43,7 @@
   src: url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.woff2") format("woff2"), url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.woff") format("woff"), url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.ttf") format("truetype"), url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.svg#roboto_slabregular") format("svg");
   font-weight: normal;
   font-style: normal;
+<<<<<<< HEAD
 }
 /* menu 3 */
 @font-face {
@@ -64,6 +65,29 @@
   font-weight: normal;
   font-style: normal;
 }
+=======
+}
+/* menu 3 */
+@font-face {
+  font-family: "dancing_scriptregular";
+  src: url("Fonts/dancing/dancingscript-variablefont_wght-webfont.woff2") format("woff2"), url("Fonts/dancing/dancingscript-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "shadows_into_lightregular";
+  src: url("Fonts/shadow/shadowsintolight-webfont.woff2") format("woff2"), url("Fonts/shadow/shadowsintolight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* menu 4 */
+@font-face {
+  font-family: "kaushan_scriptregular";
+  src: url("Fonts/kaushan/kaushanscript-regular-webfont.woff2") format("woff2"), url("Fonts/kaushan/kaushanscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+>>>>>>> 6554770f5b0fa80939f826e5fd40d32c10124af0
 @font-face {
   font-family: "kalamregular";
   src: url("Fonts/kalam/kalam-regular-webfont.woff2") format("woff2"), url("Fonts/kalam/kalam-regular-webfont.woff") format("woff");
@@ -340,6 +364,7 @@
   font-size: 1em;
   margin: 0 0;
   text-align: center;
+<<<<<<< HEAD
 }
 
 .entree {
@@ -354,6 +379,22 @@
   grid-area: "dessert";
 }
 
+=======
+}
+
+.entree {
+  grid-area: "entree";
+}
+
+.plat {
+  grid-area: "plat";
+}
+
+.dessert {
+  grid-area: "dessert";
+}
+
+>>>>>>> 6554770f5b0fa80939f826e5fd40d32c10124af0
 #last_item {
   grid-area: "signature";
   display: flex;
@@ -361,6 +402,7 @@
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10%;
+<<<<<<< HEAD
 }
 
 ul {
@@ -374,6 +416,21 @@ ul li {
   text-align: center;
 }
 
+=======
+}
+
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+  display: FLEX;
+  flex-direction: column;
+  padding: 5% 6% 0% 6%;
+  text-align: center;
+}
+
+>>>>>>> 6554770f5b0fa80939f826e5fd40d32c10124af0
 .composition__name {
   padding-bottom: 4%;
 }
@@ -515,6 +572,12 @@ ul li {
 
   #pages_menu .sub_section header {
     font-size: 40px;
+<<<<<<< HEAD
+=======
+  }
+  #pages_menu .sub_section .title h4 {
+    font-size: 22px;
+>>>>>>> 6554770f5b0fa80939f826e5fd40d32c10124af0
   }
   #pages_menu .sub_section .title h4 {
     font-size: 22px;
@@ -562,6 +625,51 @@ ul li {
   font-weight: normal;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+/* parametres font menu communs */
+@font-face {
+  font-family: "segoeprint";
+  src: url("../css/Fonts/segoe-print/segoepr.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cantata";
+  src: url("../css/Fonts/Cantata_One/CantataOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* parametres fonts menus */
+/* menu 1 */
+@font-face {
+  font-family: "devonshireregular";
+  src: url("Fonts/devonshire/devonshire-regular-webfont.woff2") format("woff2"), url("Fonts/devonshire/devonshire-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* menu 2 */
+@font-face {
+  font-family: "croissant_oneregular";
+  src: url("Fonts/croissant/croissantone-regular-webfont.woff2") format("woff2"), url("Fonts/croissant/croissantone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto_slabregular";
+  src: url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.eot");
+  src: url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.woff2") format("woff2"), url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.woff") format("woff"), url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.ttf") format("truetype"), url("Fonts/roboto-slab/RobotoSlab-Regular-webfont.svg#roboto_slabregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* menu 3 */
+@font-face {
+  font-family: "dancing_scriptregular";
+  src: url("Fonts/dancing/dancingscript-variablefont_wght-webfont.woff2") format("woff2"), url("Fonts/dancing/dancingscript-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+>>>>>>> 6554770f5b0fa80939f826e5fd40d32c10124af0
 @font-face {
   font-family: "shadows_into_lightregular";
   src: url("Fonts/shadow/shadowsintolight-webfont.woff2") format("woff2"), url("Fonts/shadow/shadowsintolight-webfont.woff") format("woff");
@@ -737,6 +845,7 @@ body {
   margin: 5% 10%;
   grid-template-columns: 1fr;
 <<<<<<< HEAD
+<<<<<<< HEAD
   grid-gap: 2%;
 =======
   gap: 20px;
@@ -762,6 +871,9 @@ body {
   width: 100%;
   height: 100%;
 >>>>>>> 658ca7ba7e4a2a78b121211bcb3c4a30a0e5dadf
+=======
+  grid-gap: 2%;
+>>>>>>> 6554770f5b0fa80939f826e5fd40d32c10124af0
 }
 
 /* BOUTON */

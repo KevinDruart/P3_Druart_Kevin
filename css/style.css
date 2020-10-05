@@ -308,6 +308,7 @@
 }
 #title_menu h3 {
   text-align: center;
+  margin-top: 0;
 }
 
 /* MAIN*/
@@ -363,6 +364,10 @@
   margin-right: auto;
   padding-bottom: 10%;
 }
+#last_item .fa-music::before {
+  font-size: 40px;
+  padding-right: 5px;
+}
 
 ul {
   padding-left: 0;
@@ -388,6 +393,13 @@ ul li {
 }
 
 /* specifique menu 1 */
+.fa-music::before {
+  font-size: 60px;
+  background: -webkit-linear-gradient(left, #ee5a61, #f4896d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .pages_menu1 .sub_section {
   background-color: #fcdfdb;
   color: #3c1218;
@@ -988,4 +1000,5 @@ footer a:hover {
     font-size: 40px;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

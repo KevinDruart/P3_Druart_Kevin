@@ -217,7 +217,7 @@
 
 /* Parametres specific menu */
 /* menu 1 */
-.pages_menu1 container {
+.pages_menu1 .sub_section {
   font-family: "segoeprint";
 }
 
@@ -239,7 +239,7 @@
 }
 
 /* menu 2 */
-.pages_menu3 container {
+.pages_menu3 .sub_section {
   font-family: "segoeprint";
 }
 

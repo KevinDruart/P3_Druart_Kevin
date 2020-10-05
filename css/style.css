@@ -880,6 +880,13 @@ footer a:hover {
     -webkit-transform: rotate(0deg);
   }
 }
+/* Page mentions legales */
+#mentions section {
+  display: grid;
+  grid-template-rows: auto;
+  text-align: center;
+}
+
 /* RESPONSIVE */
 /* 576PX */
 @media only screen and (min-width: 576px) {

@@ -3,7 +3,7 @@
 
 ## Auteur
 
-👤 &nbsp; **Druart Kevin** [🇫🇷 Contactez moi 🇬🇧](<k.druart2@gmail.com>)
+👤 &nbsp; **Druart Kevin** [Contactez moi](<k.druart2@gmail.com>)
 
 * Github: [@Druart Kevin](https://github.com/KevinDruart)
 * LinkedIn: [@Druart Kein](https://www.linkedin.com/in/kevin-druart-430764201/)

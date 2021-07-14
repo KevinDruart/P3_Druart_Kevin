@@ -32,20 +32,20 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 
 #### Maquettes site et menu
 * menu 1
-![100%](/maquettes/menu-1.png)
 ![100%](/maquettes/menu-1b.png)
+![100%](/maquettes/menu-1.png)
 
 * menu 2
-![100%](/maquettes/menu-2.png)
 ![100%](/maquettes/menu-2b.png)
+![100%](/maquettes/menu-2.png)
 
 * menu 3
-![100%](/maquettes/menu-3.png)
 ![100%](/maquettes/menu-3b.png)
+![100%](/maquettes/menu-3.png)
 
 * menu 4
-![100%](/maquettes/menu-4.png)
 ![100%](/maquettes/menu-4b.png)
+![100%](/maquettes/menu-4.png)
 
 
 

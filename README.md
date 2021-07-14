@@ -1,7 +1,7 @@
 ### OpenClassrooms-Développeur Web
 
 
-## Auteur
+### Auteur
 
 👤 &nbsp; **Druart Kevin** [Contactez moi](<k.druart2@gmail.com>)
 
@@ -11,7 +11,7 @@
 
 ***
 
-## Projet 3 - Dynamisez une page web avec des animations CSS
+### Projet 3 - Dynamisez une page web avec des animations CSS
 
 ***
 
@@ -30,7 +30,7 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 * Assurer la cohérence graphique d'un site web
 
 
-#### Maquettes site et menu
+### Maquettes site et menu
 * menu 1
 ![100%](/maquettes/menu-1b.png)
 ![100%](/maquettes/menu-1.png)
@@ -49,7 +49,7 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 
 
 
-#### Contenus de ce repository et installation
+### Contenus de ce repository et installation
 
 * Ce repo contient les 4 dossiers `CSS`, `SASS`,`images` et `maquettes`.
 Vous pouvez cloner ce repository pour récupérer en local le site complet.
@@ -58,7 +58,7 @@ Vous pouvez cloner ce repository pour récupérer en local le site complet.
 ***
 
 
-##### Utilisé dans ce projet
+### Utilisé dans ce projet
 
 | Technologies             | et outils          |
 |:------------------------:|:------------------:|

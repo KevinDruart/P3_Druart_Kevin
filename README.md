@@ -6,7 +6,7 @@
 👤 &nbsp; **Druart Kevin** [Contactez moi](<k.druart2@gmail.com>)
 
 * Github: [@Druart Kevin](https://github.com/KevinDruart)
-* LinkedIn: [@Druart Kein](https://www.linkedin.com/in/kevin-druart-430764201/)
+* LinkedIn: [@Druart Kevin](https://www.linkedin.com/in/kevin-druart-430764201/)
 * Visitez (prochainement)==> 🏠 [Site Web]()
 
 ***
